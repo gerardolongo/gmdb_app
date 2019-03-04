@@ -1,0 +1,7 @@
+{
+  "name": "gmdb_app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

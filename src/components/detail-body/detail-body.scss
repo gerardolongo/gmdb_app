@@ -1,0 +1,21 @@
+detail-body {
+    .cancel-text{
+        color: $color-yellow;
+    }
+
+    .delete-btn, .delete-btn:hover {
+        background-color: $color-yellow;
+        color: white;
+        font-size: large;
+    }
+
+    .card-title{
+        color: white;
+    }
+
+    .card-content-ios {
+        //padding: 14px;
+        border-radius: 4px;
+        color: white;
+    }
+}

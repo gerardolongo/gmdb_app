@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu" class="menu"></ion-icon> 
+    </button>
+    <ion-title>
+      Prossimi episodi
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+          <ion-item-sliding #item *ngFor="let telefilm of telefilms" class="list-air-episodes">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="{{telefilm.poster_path}}">
+              </ion-thumbnail>
+              <h2>{{telefilm.original_name}}</h2>
+              <p class="item-color">Next air date: {{telefilm.tv_details.next_episode_to_air.air_date}}</p>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="danger" expandable (click)="delete(telefilm, item)">
+                  <ion-icon name="trash"></ion-icon>
+                </button>
+            </ion-item-options>
+          </ion-item-sliding>
+      </ion-list>
+</ion-content>

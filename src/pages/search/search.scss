@@ -1,0 +1,25 @@
+page-search {
+    .card-content, .searchbar-ios{
+        background: $color-background;
+    }
+
+    .card {
+        margin: 30px 0 0 12px;
+    }
+
+    .like{
+        text-align: center;
+    }
+
+    .back-button {
+        color: $color-yellow !important;
+    }
+
+    .follow-btn, .follow-btn:hover {
+        background-color: $color-yellow;
+        color: white;
+    }
+    .card p, .card-title{
+        color: white;
+    }
+}

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon> 
+    </button>
+    <ion-title>
+      Ricerca Telefilm
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding> 
+  <ion-searchbar [(ngModel)]="title" #searchbar (ionBlur)="ricerca()"></ion-searchbar>
+  <ion-content padding>
+    <ion-list *ngIf="this.results"> 
+      <ion-card  *ngFor="let item of this.results">
+          <img src="{{item.poster_path}}" />
+          <ion-card-content>
+            <ion-card-title>
+              {{item.original_name}}
+            </ion-card-title>
+            <p>
+              {{item.overview}}
+            </p>
+          </ion-card-content>
+          <ion-row class="like" (click)="presentAddTelefilm(item)">
+            <ion-col>
+              <div ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+      </ion-card>
+    </ion-list>
+  </ion-content>
+</ion-content>
