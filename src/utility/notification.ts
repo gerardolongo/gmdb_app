@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 import { TvDetails } from "../model/Tv";
 
 @Injectable()
-export class Notify {
+export class Notification {
     constructor(public localNotifications : LocalNotifications,  public tvProvider: TvDetailsProvider
         , public gmdbProvider: GmdbapiProvider) { }
 

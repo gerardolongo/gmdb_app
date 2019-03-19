@@ -15,7 +15,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 import { AirepisodesPage } from '../pages/airepisodes/airepisodes';
 import { MatCheckboxModule, MatButtonModule, MatDialogModule, MatDialog } from '@angular/material';
 import { DetailBodyComponent } from '../components/detail-body/detail-body';
-import { Notify } from '../utility/notify';
+import { Notification } from '../utility/notification';
 
 
 @NgModule({
@@ -51,7 +51,7 @@ import { Notify } from '../utility/notify';
     GmdbapiProvider,
     TvDetailsProvider,
     LocalNotifications,
-    Notify
+    Notification
   ]
   
 })
